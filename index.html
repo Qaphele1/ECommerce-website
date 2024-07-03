@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce Site</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Fashionate</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+        <section class="home" id="home">
+            <img src="Fashion.png" alt="Home Image">
+            <div class="home-text">
+                <h1>Welcome to Fashionate</h1>
+                <p> Where style meets passion.</p>
+            </div>
+        </section>
+        <section class="products" id="products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <!-- Example product cards -->
+                <div class="product-card" data-id="1" data-name="Product 1" data-price="1849.98" data-image="Product 1.png">
+                    <img src="Product 1.png" alt="Product 1">
+                    <h3>Jacket</h3>
+                    <p>R1849<span><sup>.98</sup></span></p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+                <div class="product-card" data-id="2" data-name="Product 2" data-price="1149.99" data-image="Product 2.png">
+                    <img src="Product 2.png" alt="Product 2">
+                    <h3>Sneakers</h3>
+                    <p>R1149<span><sup>.99</sup></span></p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+                <div class="product-card" data-id="3" data-name="Product 3" data-price="445.00" data-image="Product 3.png">
+                    <img src="Product 3.png" alt="Product 3">
+                    <h3>Handbag</h3>
+                    <p>R445<span><sup>.00</sup></span></p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+                <div class="product-card" data-id="4" data-name="Product 4" data-price="349.99" data-image="Product 4.png">
+                    <img src="Product 4.png" alt="Product 4">
+                    <h3>T-shirt</h3>
+                    <p>R349<span><sup>.99</sup></span></p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+                <div class="product-card" data-id="5" data-name="Product 5" data-price="819.90" data-image="Product 5.png">
+                    <img src="Product 5.png" alt="Product 5">
+                    <h3>Zipper Sneakers</h3>
+                    <p>R819<span><sup>.90</sup></span></p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+                <div class="product-card" data-id="6" data-name="Product 6" data-price="249.99" data-image="Product 6.png">
+                    <img src="Product 6.png" alt="Product 2">
+                    <h3>Cap</h3>
+                    <p>R249<span><sup>.99</sup></span></p>
+                    <a href="#" class="add-to-cart"><i class='bx bx-cart-add'></i></a>
+                </div>
+                <!-- More product cards -->
+            </div>
+        </section>
+        <section class="about" id="about">
+            <img src="About.png" alt="About Image">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>At Fashionate, we believe that fashion is more than just clothing<br>—it's a way of expressing your unique personality and creativity. <br>Founded with a vision to bring the latest trends and timeless classics<br> to fashion enthusiasts around the world, we are committed to offering high-quality,<br> stylish, and affordable apparel for every occasion.</p>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <p>Feel free to reach out to us for any inquiries.</p>
+        </section>
+        <section class="cart">
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+            <div class="cart-total">
+                <hr>
+                <h3>Total: R<span id="cart-total">0.00</span></h3>
+                <button class="checkout-button">Checkout</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fashionate. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
